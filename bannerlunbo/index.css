@@ -1,0 +1,155 @@
+/*
+* @Author: dulovely
+* @Date:   2017-09-18 16:31:59
+* @Last Modified by:   dulovely
+* @Last Modified time: 2017-09-20 00:42:17
+*/
+*{
+	margin: 0;
+	padding: 0;
+	list-style: none;
+	font-family: sans-serif;
+	font-size: 16px;
+}
+i{
+	color: #fff;
+	font-style: normal;
+}
+img{
+	border: none;
+}
+a{
+	text-decoration: none;
+	color: #fff;
+}
+main{
+	width: 100%;
+	height: 500px;
+	background: #add;
+}
+
+.main{
+	width: 1230px;
+	height: 500px;
+	position: relative;
+	margin: 10px auto;
+}
+/* 轮播图 */
+.imgBox{
+	width: 1230px;
+	height: 500px;
+	background: pink;
+}
+.imgBox>li{
+	width: 1230px;
+	height: 500px;
+}
+.imgBox>li>a{
+	width: 1230px;
+	height: 500px;
+}
+.imgBox>li>a>img{
+	width: 1230px;
+	height: 500px;
+	position: absolute;
+	top: 0;
+	left: 0;
+	display: none;
+}
+.imgBox>li>img.block{
+	display: block;
+}
+
+/* 轮播按钮 */
+.bannerBtn{
+	width: 150px;
+	height: 15px;
+	
+	position: absolute;
+	left: 50%;
+    bottom: 20px;
+}
+.bannerBtn>li{
+	width: 15px;
+	height:15px;
+	background: green;
+	border-radius: 50%;
+	margin-right: 10px;
+	float: left;
+}
+.bannerBtn>li:hover{
+	width: 11px;
+	height: 11px;
+	background: lightgrey;
+	border: 2px solid gray;
+
+}
+/* 左右前进后退箭头 */
+.main>a{
+	width: 35px;
+	height: 70px;
+	background: rgba(0, 0, 0, 0.1);
+	text-align: center;
+	line-height: 70px;
+	font-size: 30px;
+	font-weight: bold;
+	position: absolute;
+	top: 50%;
+	margin-top: -35px;
+}
+.main > a:first-of-type{
+	 left: 200px;
+}
+.main>a:last-of-type{
+	 right: 0;
+}
+/* 侧导航 */
+.aside{
+	width: 200px;
+	height: 480px;
+	background: rgba(0, 0, 0, 0.6);
+	padding: 10px 0;
+	position: absolute;
+	left: 0 ;
+	top: 0;
+}
+.aside>li{
+	width: 180px;
+	height: 30px;
+	padding:0 10px;
+	line-height: 30px;
+}
+.aside>li:hover{
+	background: #fff;
+}
+.aside>li>a{
+	display: block;
+	width: 100%;
+	height: 100%;
+	color: #fff;
+}
+.aside>li:hover a{
+	color:red;
+}
+.aside>li>a>i{
+	color: #fff;
+}
+.aside>li:hover i{
+	color : red;
+}
+.aside>li>ul.item{
+	width: 600px;
+	height: 500px;
+	background: red;
+	font-size: 16px;
+	color: #fff;
+	padding-left: 10px;
+	position: absolute;
+	bottom: 0;
+	left: 200px;
+	display: none;
+
+}
+.aside>li>ul.block{
+	display: block;
+}
